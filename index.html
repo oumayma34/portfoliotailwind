@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <title>My Portfolio Tailwind</title>
+</head>
+<body class="bg-slate-400">
+    <header class="bg-gray-800 text-white p-4">
+         <!-- Header Section -->
+    <header class="bg-gray-800 text-white p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-2xl font-bold">Zoughlami Oumayma</h1>
+            <nav>
+                <ul class="flex space-x-4">
+                    <li><a href="#" class="hover:text-gray-300">Home</a></li>
+                    <li><a href="#" class="hover:text-gray-300">Projects</a></li>
+                    <li><a href="#" class="hover:text-gray-300">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!-- Hero Section -->
+    <section class="bg-gray-900 text-white py-20 flex items-center justify-center">
+        <div class="container mx-auto text-center">
+            <img src="photodeprofil.jpg" alt="mon image" class="w-64 h-auto mb-8 rounded-full mx-auto">
+            <h2 class="text-4xl font-bold mb-4">Welcome to My Portfolio</h2>
+            <p class="text-lg">Hello my name is Oumayma , I'm 34 years Old , I'm from el kef. I studied biomedical engineering in Tunis and now I'm a manager in insurance company based in Sousse. Since March 2024 i started learning web developpement in Gomycode </p>
+        </div>
+    </section>
+      <!-- Skills Section -->
+      <section class="container mx-auto py-12">
+        <h2 class="text-2xl font-bold mb-4">My Skills</h2>
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+            <div class="p-4 bg-white rounded-lg shadow-md">
+                <h3 class="text-lg font-semibold mb-2 text-red-700">Personal Skills</h3>
+                <p class="text-sm font-medium text-black">critical-thinking , problem solving, oral and written communication , leadership, time management .</p>
+            </div>
+            <div class="p-4 bg-white rounded-lg shadow-md">
+                <h3 class="text-lg font-semibold mb-2 text-red-700">Professional Skills</h3>
+                <p class="text-sm font-medium text-black">Marketing , Presentation competency , computer literate , other languages ( arabic , english, french , Deutsch ) , research expertise.</p>
+            </div>
+        
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="container mx-auto py-12">
+        <h2 class="text-2xl font-bold mb-4">Projects</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="bg-white rounded-lg shadow-md">
+                <img src="html-cssimg.png" alt="Project 1" class="w-full h-48 object-cover rounded-t-lg">
+                <div class="p-4">
+                    <h3 class="text-lg font-semibold mb-2 text-red-700">HTML and CSS March 2024</h3>
+                    <p class="text-sm font-medium text-black">HTML and CSS are scripting languages used to create a web page and web applications. HTML provides web page structure, whereas CSS is mainly used to control web page styling.</p>
+                </div>
+            </div>
+            <div class="bg-white rounded-lg shadow-md">
+                <img src="bootstrapimg.png" alt="Project 2" class="w-full h-48 object-cover rounded-t-lg">
+                <div class="p-4">
+                    <h3 class="text-lg font-semibold mb-2 text-red-700">Bootstrap March 2024</h3>
+                    <p class="text-sm font-medium text-black">Bootstrap is a free, open source front-end development framework for the creation of websites and web apps. Designed to enable responsive development of mobile-first websites, Bootstrap provides a collection of syntax for template designs</p>
+                </div>
+            </div>
+            <div class="bg-white rounded-lg shadow-md">
+                <img src="tailwindimg.jpg" alt="Project 1" class="w-full h-48 object-cover rounded-t-lg">
+                <div class="p-4">
+                    <h3 class="text-lg font-semibold mb-2 text-red-700">Tailwind April 2024</h3>
+                    <p class="text-sm font-medium text-black">Tailwind CSS is a utility-first CSS framework that streamlines web development by providing a set of pre-designed utility classes. These classes enable rapid styling without writing custom CSS, promoting consistency and scalability.</p>
+                </div>
+        </div>
+    </section>
+
+    <!-- Contact Form -->
+    <section class="container mx-auto py-12">
+        <h2 class="text-2xl font-bold mb-4">Contact Me</h2>
+        <form class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div>
+                <label for="name" class="block mb-1">Name</label>
+                <input type="text" id="name" name="name" class="w-full border-gray-300 rounded-md px-4 py-2">
+            </div>
+            <div>
+                <label for="email" class="block mb-1">Email</label>
+                <input type="email" id="email" name="email" class="w-full border-gray-300 rounded-md px-4 py-2">
+            </div>
+            <div class="col-span-2">
+                <label for="message" class="block mb-1">Message</label>
+                <textarea id="message" name="message" rows="4" class="w-full border-gray-300 rounded-md px-4 py-2"></textarea>
+            </div>
+            <button type="submit" class="bg-blue-500 text-white px-4 py-2 rounded-md">Submit</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto flex justify-center items-center">
+            <ul class="flex space-x-4">
+                <li><a href="#" class="text-white hover:text-gray-300"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="#" class="text-white hover:text-gray-300"><i class="fab fa-linkedin"></i></a></li>
+                <li><a href="#" class="text-white hover:text-gray-300"><i class="fab fa-github"></i></a></li>
+            </ul>
+        </div>
+        <div class="text-center mt-4">&copy; 2024 Zoughlami Oumayma. All Rights Reserved.</div>
+    </footer>
+    
+</body>
+</html>
